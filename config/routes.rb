@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   #Controlers de um admin, contruir pasta no controllers, admin
   # namespace :admin do
   # end
+
+  #api.localhost:3000
+
 end
