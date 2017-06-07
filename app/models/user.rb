@@ -4,4 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+            #Se usuario for destruido, as tarefas relacionadas tambem serao
+  has_many :tasks, dependent: :destroy
 end
